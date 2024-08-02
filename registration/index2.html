@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+
+        h2,
+        h3 {
+            color: #333;
+        }
+
+        h2 {
+            margin-bottom: 10px;
+        }
+
+        h3 {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2></h2>
+    <h3></h3>
+
+
+    <script>
+        
+        var currentLocation = window.location.href;
+        var url = new URL(currentLocation);
+        console.log(url);
+        var userName = url.searchParams.get('userName');
+        var userAddress = url.searchParams.get("address");
+        var userEmail = url.searchParams.get("email");
+        var userPhone = url.searchParams.get("phone");
+        var userGender = url.searchParams.get("Gender");
+
+        var header = document.getElementsByTagName("h2")[0].textContent = "Welcome " + userName;
+        var h = document.getElementsByTagName("h3")[0];
+        setTimeout(function () {
+            h.textContent = `Your information
+            Address: ${userAddress}
+             Email: ${userEmail} 
+             Phone: ${userPhone}
+            Gender: ${userGender}`;
+            h.style.whiteSpace = "pre-line";
+
+        }, 1000)
+    </script>
+
+</body>
+
+</html>

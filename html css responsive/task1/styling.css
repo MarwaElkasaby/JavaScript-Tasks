@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+header .logo a {
+    color: #fff;
+    font-size: 2rem;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+header .logo a span {
+    color: #e8491d;
+}
+
+header nav {
+    float: right;
+}
+
+header .nav-links {
+    list-style: none;
+}
+
+header .nav-links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+header .cta a {
+    color: #fff;
+    background: #e8491d;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hero {
+    background: url('https://preview.colorlib.com/theme/webuni/images/bg_1.jpg') no-repeat center center/cover;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.hero .container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.hero .btn {
+    color: #fff;
+    background: #e8491d;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.features {
+    padding: 50px 0;
+    background: #f4f4f4;
+}
+
+.features .container {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.features .feature {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.features .feature i {
+    font-size: 3rem;
+    color: #e8491d;
+    margin-bottom: 20px;
+}
+
+.features .feature h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.features .feature p {
+    font-size: 1rem;
+}

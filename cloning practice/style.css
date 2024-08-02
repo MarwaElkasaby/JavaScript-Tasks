@@ -1,0 +1,15 @@
+body{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+div{
+    padding: 10px;
+    background-color: black;
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+    width:200px;
+    height: 300px;
+    cursor: pointer;
+}

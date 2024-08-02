@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Colorlib | Free Bootstrap Website Template</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background-size: cover;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+            width: 100%;
+            height: 60px;
+            padding: 0;
+            background-color: #2c2c2c;
+            position: fixed;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            z-index: 1000;
+        }
+
+        header div {
+            display: flex;
+            align-items: center;
+        }
+
+        header div#colorlib a,
+        header div#webuni a {
+            color: #fff;
+            font-size: 1.5rem;
+            text-decoration: none;
+        }
+
+        header ul {
+            display: flex;
+            list-style: none;
+        }
+
+        header ul li {
+            margin: 0 10px;
+        }
+
+        header ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        nav {
+            margin-top: 60px;
+            display: flex;
+            justify-content: center;
+            background: #f0f0f0;
+            padding: 10px 0;
+        }
+
+        nav div {
+            margin: 0 15px;
+        }
+
+        nav div a {
+            text-decoration: none;
+            color: #2c2c2c;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+
+        button#login {
+            background-color: #2c2c2c;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        section {
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        section h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        section p#desc {
+            font-size: 1.25rem;
+            margin-bottom: 40px;
+        }
+
+        form {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        input.text {
+            margin: 10px;
+            padding: 10px;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            width: 200px;
+        }
+
+        input#signup {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border: none;
+            background-color: #2c2c2c;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        #search {
+            background-color: #fff;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        #search div {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        form#white input[type="text"] {
+            margin: 10px;
+            padding: 10px;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            width: 200px;
+        }
+
+        form#white button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border: none;
+            background-color: #2c2c2c;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        #fcourses {
+            font-size: 2.5rem;
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        #coursep {
+            font-size: 1.25rem;
+            text-align: center;
+            margin: 20px 0 50px 0;
+        }
+
+        #category {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 50px;
+        }
+
+        #category div {
+            margin: 0 10px;
+            font-size: 1.25rem;
+            cursor: pointer;
+        }
+
+        #college {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        #college .grid {
+            background: #fff;
+            border: 1px solid #ccc;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #college .grid img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        #college .grid .price {
+            font-size: 1.25rem;
+            margin: 10px 0;
+        }
+
+        #college .grid .caption {
+            font-size: 1rem;
+        }
+
+        #college .grid .caption h3 {
+            font-size: 1.5rem;
+            margin: 10px 0;
+        }
+
+        #college .grid .caption p {
+            margin: 10px 0;
+        }
+
+        #college .grid .caption .students {
+            font-size: 0.875rem;
+            color: #666;
+        }
+
+        #college .grid .caption .p {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #college .grid .caption .p img {
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        #college .grid .caption .p span {
+            font-size: 0.875rem;
+        }
+
+        #college .grid .caption .p .job {
+            color: #666;
+            font-size: 0.75rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="landing-page">
+        <header>
+            <div>
+                <div id="colorlib"><a href=""> colorlib<span>.</span></a></div>
+                <div id="webuni"><a href="">+ webuni</a></div>
+            </div>
+
+            <ul>
+                <li id="desktop-view"><a href="#">
+                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v5m-3 0h6M4 11h16M5 15h14a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1Z"/>
+                    </svg>
+                </a></li>
+                <li id="tablet-view"><a href="#">
+                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 18h2M5.875 3h12.25c.483 0 .875.448.875 1v16c0 .552-.392 1-.875 1H5.875C5.392 21 5 20.552 5 20V4c0-.552.392-1 .875-1Z"/>
+                    </svg>
+                </a></li>
+                <li id="mobile-view"><a href="#">
+                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 18h2M5.875 3h12.25c.483 0 .875.448.875 1v16c0 .552-.392 1-.875 1H5.875C5.392 21 5 20.552 5 20V4c0-.552.392-1 .875-1Z"/>
+                    </svg>
+                </a></li>
+            </ul>
+        </header>
+
+        <nav>
+            <div id="catalog"><a href="">Course catalog</a></div>
+            <div id="course"><a href="">My Courses</a></div>
+            <div id="certified"><a href="">Get Certified</a></div>
+            <div id="login">
+                <button id="login">Log in</button>
+            </div>
+        </nav>
+
+        <section>
+            <h1>Build Your Future</h1>
+            <p id="desc">Accelerate Your Career with World-Class Instructors</p>
+
+            <form>
+                <input type="text" class="text" id="fname" name="fname" placeholder="First Name">
+                <input type="text" class="text" id="lname" name="lname" placeholder="Last Name">
+                <input type="email" class="text" id="email" name="email" placeholder="Email">
+                <input type="text" class="text" id="country" name="country" placeholder="Country">
+                <input type="submit" id="signup" value="Sign Up">
+            </form>
+        </section>
+
+        <div id="search">
+            <div>Find Your Course</div>
+
+            <form id="white">
+                <input type="text" id="find" name="find" placeholder="What do you want to learn?">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+
+        <div id="fcourses">Featured Courses</div>
+
+        <p id="coursep">Explore our most popular courses and start learning today.</p>
+
+        <div id="category">
+            <div id="all">All Categories</div>
+            <div id="business">Business</div>
+            <div id="design">Design</div>
+            <div id="development">Development</div>
+            <div id="marketing">Marketing</div>
+        </div>
+
+        <div id="college">
+            <div class="grid">
+                <img src="images/marketing.jpg" alt="Marketing">
+                <div class="price">$50</div>
+                <div class="caption">
+                    <h3>Marketing Fundamentals</h3>
+                    <p>Learn the basics of marketing and boost your career.</p>
+                    <div class="students">2000 Students</div>
+                    <div class="p">
+                        <img src="images/instructor1.jpg" alt="Instructor">
+                        <span>John Doe</span>
+                        <span class="job">Marketing Expert</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid">
+                <img src="images/design.jpg" alt="Design">
+                <div class="price">$40</div>
+                <div class="caption">
+                    <h3>Graphic Design</h3>
+                    <p>Become a professional graphic designer with this course.</p>
+                    <div class="students">1500 Students</div>
+                    <div class="p">
+                        <img src="images/instructor2.jpg" alt="Instructor">
+                        <span>Jane Smith</span>
+                        <span class="job">Graphic Designer</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid">
+                <img src="images/development.jpg" alt="Development">
+                <div class="price">$60</div>
+                <div class="caption">
+                    <h3>Web Development</h3>
+                    <p>Master web development with this comprehensive course.</p>
+                    <div class="students">2500 Students</div>
+                    <div class="p">
+                        <img src="images/instructor3.jpg" alt="Instructor">
+                        <span>Michael Lee</span>
+                        <span class="job">Web Developer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('desktop-view').addEventListener('click', function () {
+            document.querySelector('meta[name="viewport"]').setAttribute('content', 'width=1200');
+        });
+
+        document.getElementById('tablet-view').addEventListener('click', function () {
+            document.querySelector('meta[name="viewport"]').setAttribute('content', 'width=768');
+        });
+
+        document.getElementById('mobile-view').addEventListener('click', function () {
+            document.querySelector('meta[name="viewport"]').setAttribute('content', 'width=device-width, initial-scale=1');
+        });
+    </script>
+</body>
+
+</html>
