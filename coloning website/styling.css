@@ -1,0 +1,331 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic Styles */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header Styles */
+header {
+    background: #f4f4f4;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header #colorlib, header #webuni {
+    font-size: 1.5em;
+}
+
+header #colorlib span {
+    color: #e94e77; /* Accent color */
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+}
+
+header ul li {
+    margin: 0 10px;
+}
+
+header ul li a {
+    color: #333;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+header ul li a:hover {
+    color: #e94e77;
+}
+
+/* Navigation Styles */
+nav {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav div {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav div a {
+    color: #fff;
+    font-size: 1em;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+nav div a:hover {
+    color: #e94e77;
+}
+
+#login {
+    background: #e94e77;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+#login:hover {
+    background: #d83e68;
+}
+
+/* Hero Section Styles */
+#hero {
+    background: url('assets/background.avif') no-repeat center center;
+    background-size: cover;
+    height: 80vh; /* Adjust height as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.5); /* Optional: dark overlay for better text visibility */
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.hero-content h1 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+#desc {
+    margin-bottom: 20px;
+}
+
+form input {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: calc(100% - 22px);
+    max-width: 300px;
+}
+
+#signup {
+    background: #e94e77;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+#signup:hover {
+    background: #d83e68;
+}
+
+/* Search Section Styles */
+#search {
+    background: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+#search form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#search input {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: calc(100% - 22px);
+    max-width: 300px;
+}
+
+#search button {
+    background: #e94e77;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+#search button:hover {
+    background: #d83e68;
+}
+
+/* Featured Courses Styles */
+#fcourses {
+    font-size: 1.5em;
+    margin: 20px 0;
+}
+
+#coursep {
+    margin-bottom: 20px;
+}
+
+#category {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+#category div {
+    background: #e94e77;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#category div:hover {
+    background: #d83e68;
+}
+
+#college {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Ensure 3 columns */
+    gap: 20px;
+}
+
+.grid {
+    background-color: rgb(236, 234, 234);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.grid:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.grid img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.price {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #e74c3c;
+    color: white;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 3px;
+}
+
+.caption {
+    padding: 15px;
+}
+
+.caption h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.caption p {
+    font-size: 14px;
+    color: #555;
+}
+
+.caption .students {
+    color: #e74c3c;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.p {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.p img {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.p span {
+    font-size: 14px;
+}
+
+.job {
+    color: #e74c3c;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    header ul li {
+        margin: 5px 0;
+    }
+
+    nav div {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    form input, #signup {
+        width: calc(100% - 22px);
+    }
+}
+
+@media (max-width: 480px) {
+    #search input, #search button {
+        width: calc(100% - 22px);
+    }
+
+    #category {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #category div {
+        margin-bottom: 10px;
+    }
+
+    #college {
+        grid-template-columns: repeat(2, 1fr); /* Two columns on smaller screens */
+    }
+}
+
